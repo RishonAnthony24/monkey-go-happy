@@ -7,7 +7,7 @@ var score
 function preload(){
   
   
-  monkey_running =            loadAnimation("monkey_0.png","monkey_1.png","monkey_2.png","monkey_3.png","monkey_4.png","monkey_5.png","monkey_6.png","monkey_7.png","monkey_8.png")
+  monkey_running = loadAnimation("monkey_0.png","monkey_1.png","monkey_2.png","monkey_3.png","monkey_4.png","monkey_5.png","monkey_6.png","monkey_7.png","monkey_8.png")
   
   bananaImage = loadImage("banana.png");
   obstaceImage = loadImage("obstacle.png");
@@ -77,8 +77,7 @@ function draw() {
         FoodGroup.setVelocityXEach(0);
         obstaclesGroup.setLifetimeEach(-1);
         FoodGroup.setLifetimeEach(-1);
-      monkey.changeAnimation=("collided",monkey_0.png);
-      
+    
     }
  if(FoodGroup.isTouching(monkey)){
    score=score+1
